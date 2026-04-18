@@ -1,5 +1,5 @@
 <template>
-  <div class="wall">
+  <div>
     <PhotoFrame v-for="(photo, index) in photos" :key="index" :image="photo.url" :index="index" />
   </div>
 </template>
@@ -15,11 +15,4 @@ const photos = [
 </script>
 
 <style scoped>
-.wall {
-  column-count: 3;
-  column-gap: 15px;
-  width: 80%;
-  margin: 40px auto;
-  background-color: bisque;
-}
 </style>

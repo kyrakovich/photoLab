@@ -4,14 +4,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const props = defineProps({
-  image: {
-    type: String,
-    required: true
-  }
-})
-</script>
 
 <style scoped>
 .box {
@@ -29,3 +21,12 @@ const props = defineProps({
   object-fit: cover;
 }
 </style>
+
+<script setup lang="ts">
+const props = defineProps({
+  image: {
+    type: String,
+    required: true
+  }
+})
+</script>

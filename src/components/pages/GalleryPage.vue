@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c54">
     <PhotoFrame v-for="(photo, index) in photos" :key="index" :image="photo.url" :index="index" />
   </div>
 </template>
@@ -15,4 +15,11 @@ const photos = [
 </script>
 
 <style scoped>
+.c54 {
+  column-count: 3;
+  column-gap: 15px;
+  width: 80%;
+  margin: 40px auto;
+  background-color: bisque;
+}
 </style>

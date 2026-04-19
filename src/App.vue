@@ -6,8 +6,8 @@
       </button>
       <header>
         <button class="card text" @click="GoToGallery">Галерея</button>
-        <button class="card text" @click="GoToWaterfallPage">Водопад</button>
         <button class="card text" @click="GoToWebsite">О сайте</button>
+        <button class="card text" @click="GoToWaterfallPage">Водопад</button>
       </header>
 
     </template>
@@ -35,7 +35,6 @@ function GoToGallery() {
 </script>
 
 <style>
-/* Глобальные стили */
 * {
   margin: 0;
   padding: 0;
@@ -48,17 +47,13 @@ body {
 }
 
 main {
-  column-count: 3;
-  column-gap: 15px;
-  width: 80%;
-  margin: 40px auto;
-  background-color: bisque;
+  width: 100%;
+  height: 100%;
 }
 
 #app {
   height: 100%;
   width: 100%;
-  display: grid;
   grid-template-rows: auto 1fr;
 }
 
@@ -98,6 +93,13 @@ header {
   height: 5vh;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover,
+.back:hover {
+  transform: scale(1.05);
+  background-color: #5fdfb4;
 }
 
 .back {
@@ -112,5 +114,6 @@ header {
   right: 10px;
   bottom: 10px;
   position: fixed;
+  transition: all 0.3s ease;
 }
 </style>

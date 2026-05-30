@@ -4,20 +4,21 @@
   </div>
 </template>
 
-
 <style scoped>
 .box {
-  width: 400px;
   break-inside: avoid;
   margin-bottom: 15px;
-  background-color: #20b2aa;
+  background-color: #FF006E;
   overflow: hidden;
-  display: block;
+  border-radius: 10px;
+  display: inline-block;
+  width: 100%; /* Вместо фиксированной 400px */
 }
 
 .photo {
   width: 100%;
-  height: 300px;
+  height: auto; /* Автоматическая высота */
+  display: block;
   object-fit: cover;
 }
 </style>
@@ -27,6 +28,10 @@ const props = defineProps({
   image: {
     type: String,
     required: true
+  },
+  index: {
+    type: Number,
+    default: 0
   }
 })
 </script>

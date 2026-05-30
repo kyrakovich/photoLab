@@ -3,27 +3,26 @@
         <section class="center">
             <article class="row">
                 <div class="image-box">
-                    <img src="@/assets/photos/3смена1.jpg"></img>
+                    <img src="/photos/kart2.jpg"></img>
                 </div>
                 <div class="text-box">
-                    <p>Данная сайт был создан, как хранилище, а также для улучшения навыков во фронтенде. </p>
+                    <p>Создание этого сайта помогло мне улучшить навыки во фронтенд-разработке. Мне нравится это творческое направление. Программирование — это уже не только код, но и осознание. Ведь всё в жизни — это последовательность.</p>
                 </div>
             </article>
             <article class="row reverse">
                 <div class="image-box">
-                    <img src="@/assets/photos/3смена2.jpg"></img>
+                    <img src="/photos/kart1.jpg"></img>
                 </div>
                 <div class="text-box">
-                    <p>Это забавная фотокарточка, найденная на просторах интернета</p>
+                    <p>Сейчас самое интересное в этой сфере для меня, будет, это CSS, так как постоянно лезть в разные источники, чтобы вспомнить как сделать отступ от какой-либо стороны, либо какой параметры для тени - это надоедает и тратит много времени.</p>
                 </div>
             </article>
             <article class="row">
                 <div class="image-box p1">
-                    <img src="@/assets/photos/3смена3.jpg"></img>
+                    <img src="/photos/kart3.jpg"></img>
                 </div>
                 <div class="text-box">
-                    <p>Пока не знаю что сюда написать, но сделаем вид, что тут что-то очень интересное и полезное,
-                        как-нибудь потом напишу сюда что-то</p>
+                    <p>Я вдохновляюсь теми, кто часами корпит над одним проектом, пробует новое и прорабатывает детали. Лучшие советы, которые я получал: «Позволь себе тупить» и  «Строй дерево планов и действуй по нему». </p>
                 </div>
             </article>
         </section>
@@ -36,12 +35,19 @@
 .aboutus {
     display: flex;
     justify-content: center;
+    padding-top: 8vh;
+    align-items: center;
+    background: linear-gradient(150deg, #667eea 0%, #31aa08 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 .center {
-    background-color: bisque;
     width: 44%;
     height: 92vh;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .image-box {
@@ -52,7 +58,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     overflow: hidden;
 }
 
@@ -66,7 +71,6 @@
 
 .text-box {
     flex: 1;
-    background-color: aliceblue;
     font-size: 18px;
     line-height: 1.3;
     font-family: 'Rivervale', sans-serif;

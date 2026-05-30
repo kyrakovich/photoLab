@@ -63,13 +63,17 @@ main {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 8vh;
-  background-color: blue;
+  background-color: #FB5607;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: sticky;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
 }
 
 .text {
@@ -88,7 +92,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: #3A86FF;
   width: 400px;
   height: 5vh;
   border-radius: 10px;
@@ -99,14 +103,14 @@ header {
 .card:hover,
 .back:hover {
   transform: scale(1.05);
-  background-color: #5fdfb4;
+  background-color: #b6de50;
 }
 
 .back {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: #3A86FF;
   width: 100px;
   height: 5vh;
   border-radius: 10px;
@@ -115,5 +119,6 @@ header {
   bottom: 10px;
   position: fixed;
   transition: all 0.3s ease;
+  z-index: 10001;
 }
 </style>

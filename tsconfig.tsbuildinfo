@@ -1,0 +1,1 @@
+{"root":["./src/env.d.ts","./src/main.ts","./src/router/index.ts","./src/stores/photoStore.ts","./src/App.vue","./src/components/photos.vue","./src/components/pages/FacePage.vue","./src/components/pages/GalleryPage.vue","./src/components/pages/WaterfallPage.vue","./src/components/pages/WebsitePage.vue"],"version":"6.0.2"}

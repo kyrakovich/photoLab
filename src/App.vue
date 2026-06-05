@@ -59,7 +59,7 @@ main {
 
 @font-face {
   font-family: 'Rivervale';
-  src: url(@/assets/fonts/RivervaleDemo.otf) format('opentype');
+  src: url(../assets/fonts/RivervaleDemo.otf) format('opentype');
 }
 
 header {
